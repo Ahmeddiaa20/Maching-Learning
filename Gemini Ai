@@ -1,0 +1,11 @@
+# Ahmed Diaa Monir ( First Time Using Google Ai Names Gemini )
+
+import google.generativeai as genai         # Import My library of Google 
+import os   
+google_api_key = "AIzaSyASkcXXfINECLoM3UmZR4I4iw7aGMNh7-A" # There is My API that i have Created
+genai.configure(api_key=google_api_key)     # Here is the Function for Genai
+model=genai.GenerativeModel("gemini-pro")   # Here we are using Model Gemini-Pro
+People_Asks = input("Enter Your Question : ") # When you see Enter Your Quesion : put here every thing you need
+response = model.generate_content(People_Asks)  # Here you will get from Gemini the data of the input of People_Asks
+print("Response from Gemini model:")    
+print(response.text)
