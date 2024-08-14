@@ -1,0 +1,13 @@
+# Requests of HTTP :D ( Ahmed Diaa Monir )
+import requests
+r = requests.get("http://www.google.com") #Example GOOGLE
+r.status_code
+200 # ok
+# 403 forbidden
+# 404 not found
+r.headers
+print(r.headers)
+r.headers["Date"] # Time of the day 
+print(r.headers["Date"])
+r.text # ( HTML )
+print(r.text)
